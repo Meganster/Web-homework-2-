@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Site like Stackoverflow">
+    <meta name="author" content="yury" >
+    <link rel="icon" href="./static/favicon.ico">
+
+    <title>One more question</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/starter-template.css" rel="stylesheet">
+    <link href="/static/poptags-template.css" rel="stylesheet">
+    <link href="/static/question-answer.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+   <!--Описание шапки для страницы-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+
+        <!--Описание navbar-header-->
+        <div class="navbar-header style-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <!--a><img src="./sign-question-icon.png" alt=" icons"  height="50" width="50" class="img-circle"></a-->
+          <a class="navbar-brand logo pull-left" href="./index.html" style="color: white">
+            One more question
+          </a>
+        </div>
+
+       
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <!--ul class="nav navbar-nav navbar-search">
+            <li><input class="placeholder" type="text" placeholder="Search"></li>
+          </ul-->
+          <ul class="nav navbar-nav">
+            <li>
+              <form class="navbar-search pull-left">
+                <input type="text" class="placeholder" placeholder="Search">
+              </form>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="./login.html">Log in</a></li>
+            <li><a href="./signup.html">Registration</a></li>
+          </ul>   
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </nav>
+  <p></p>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8">
+          <div class="main-question">
+              <div class="row">
+                <div class="col-xs-8 col-sm-2">
+                  <img src="./sign-question-icon.png" alt="Question1"  height="100" width="100" class="img-thumbnail" style="margin: 1% 0% 1% 10px">
+                </div>
+                <div class="col-xs-4 col-sm-10">
+                  <dl>
+                    <dt class="headlines-answer-question">
+                      <a href="#question1">Strange question1</a>
+                    </dt>
+                    <dd>
+                      Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому...Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому...Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому...Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому...
+                    </dd>
+                  </dl>
+
+                  <div class="row" style="margin-top: 20px; margin-bottom: 10px">
+                    <div class="col-xs-8 col-sm-6">
+                      <div class="main-answers-and-tags">
+                        <span>Tags:</span>
+                        <a href="#mvc">MVC</a> <a href="#overflow">Overflow</a>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-6">
+                      <div class="main-btn-group btn-group">
+                        <button class="btn btn-link btn-sm"><img src="./static/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm" disabled="disabled" style="color: #00FF00; font-size: 12pt;">+28</button>
+                        <button class="btn btn-link btn-sm"><img src="./static/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+
+          </div> <!--main-question -->
+
+          <div class="row question-answer">
+            <div class="col-xs-8 col-sm-2" style="margin-top: 3px; margin-right: 0; padding-left: 10px; width: 70px">
+              <img src="./sign-question-icon.png" alt="answer1"  height="70" width="70" class="img-thumbnail">
+
+              <!--div style="margin-top: 20px; width: 70px">
+                <div class="btn-group">
+                  <button class="btn btn-link btn-sm"><img src="./static/up.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-link btn-sm" disabled="disabled" style="width: 45px; color: #00FF00; font-size: 14pt;">+2</button>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-link btn-sm"><img src="./static/down.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                </div>
+              </div-->
+            </div>
+            <div class="col-xs-4 col-sm-10" style="padding-left: 0px; margin-left: 0px; padding-right: 0px;">
+              <dl>
+                <dt class="headlines-answer-question">
+                  <a href="#answer1">Strange answer1</a>
+                </dt>
+                <dd>
+                  Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
+                </dd>
+              </dl>
+
+              <div class="row" style="margin-top: 20px; margin-bottom: 10px">
+                    <div class="col-xs-8 col-sm-6">
+                      <div class="main-answers-and-tags">
+                        <div class="checkbox check-box">
+                            <label>
+                              <input type="checkbox"> Correct!
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-6" style="padding-right: 0px">
+                      <div class="question-answer-btn-group btn-group">
+                        <button class="btn btn-link btn-sm"><img src="./static/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm" disabled="disabled" style="color: #00FF00; font-size: 12pt;">+2</button>
+                        <button class="btn btn-link btn-sm"><img src="./static/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                      </div>
+                    </div>
+              </div><!--/.check box and like/dislike -->
+            </div>
+          </div> <!--/.answer1 -->
+
+          <div class="row question-answer">
+            <div class="col-xs-8 col-sm-2" style="margin-top: 3px; margin-right: 0; padding-left: 10px; width: 70px">
+              <img src="./sign-question-icon.png" alt="answer2"  height="70" width="70" class="img-thumbnail">
+            </div>
+            <div class="col-xs-4 col-sm-10" style="padding-left: 0px; margin-left: 0px; padding-right: 0px;">
+              <dl>
+                <dt class="headlines-answer-question">
+                  <a href="#answer2">Strange answer2</a>
+                </dt>
+                <dd>
+                  Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
+                </dd>
+              </dl>
+
+              <div class="row" style="margin-top: 20px; margin-bottom: 10px">
+                    <div class="col-xs-8 col-sm-6">
+                      <div class="main-answers-and-tags">
+                        <div class="checkbox check-box">
+                            <label>
+                              <input type="checkbox"> Correct!
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-6" style="padding-right: 0px">
+                      <div class="question-answer-btn-group btn-group">
+                        <button class="btn btn-link btn-sm"><img src="./static/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm" disabled="disabled" style="color: #00FF00; font-size: 12pt;">+1</button>
+                        <button class="btn btn-link btn-sm"><img src="./static/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                      </div>
+                    </div>
+              </div><!--/.check box and like/dislike -->
+            </div>
+          </div> <!--/.answer2 -->
+
+          <div class="row question-answer">
+            <div class="col-xs-8 col-sm-2" style="margin-top: 3px; margin-right: 0; padding-left: 10px; width: 70px">
+              <img src="./sign-question-icon.png" alt="answer3"  height="70" width="70" class="img-thumbnail">
+            </div>
+            <div class="col-xs-4 col-sm-10" style="padding-left: 0px; margin-left: 0px; padding-right: 0px;">
+              <dl>
+                <dt class="headlines-answer-question">
+                  <a href="#answer3">Strange answer3</a>
+                </dt>
+                <dd>
+                  Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
+                </dd>
+              </dl>
+
+              <div class="row" style="margin-top: 20px; margin-bottom: 10px">
+                    <div class="col-xs-8 col-sm-6">
+                      <div class="main-answers-and-tags">
+                        <div class="checkbox check-box">
+                            <label>
+                              <input type="checkbox"> Correct!
+                            </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-6" style="padding-right: 0px">
+                      <div class="question-answer-btn-group btn-group">
+                        <button class="btn btn-link btn-sm"><img src="./static/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm" disabled="disabled" style="color: #00FF00; font-size: 12pt;">+9</button>
+                        <button class="btn btn-link btn-sm"><img src="./static/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                      </div>
+                    </div>
+              </div><!--/.check box and like/dislike -->
+            </div>
+          </div> <!--/.answer3 -->
+
+			<div class="row user-answer">
+            <div class="form-group">
+                 <textarea class="form-control"  style="max-width: 100%; min-height: 200px; max-height: 400px;" rows="3" placeholder="Enter your answer" id="textQuestion"></textarea>
+                 <button type="submit" class="btn btn-default button-answer">Answer</button>
+            </div> 
+         </div> <!--/.user answer -->
+
+        </div><!-- col-md-8 -->
+
+
+
+        <!-- правая колонка -->
+        <div class="col-md-4">
+            <div class="right-block">
+                  <div class="block">
+                        <p class="headlines-right-col">Popular Tags</p>
+                        <p>
+                          <a class="Special-format1">Python</a>
+                          <a class="Special-format2">Perl</a>
+                        </p>
+                        <p>
+                          <a class="Special-format1">Firefox</a>
+                          <a class="Special-format3" href="./fortag.html">MVC</a>
+                          <a class="Special-format2">Chrome</a>
+                        </p>
+                        <p>
+                          <a class="Special-format2">Postgre SQL</a>
+                          <a class="Special-format3">StackOverflow</a>
+                        </p>
+                  </div> 
+
+                  <div class="best-members">
+                        <div class="block">
+                            <p class="headlines-right-col">Best members</p>
+                              <ul style="list-style-type: none; text-align: left; margin: 10px -35px">
+                                <li><a href="#mrfreeman">Mr.Freeman</a></li>
+                                <li><a href="#gorub">Gorub</a></li>
+                                <li><a href="#maks">Maks</a></li>
+                                <li><a href="#fikus">Fikus</a></li>
+                                <li><a href="#alex">Alex</a></li>
+                                <li><a href="#rr">RR</a></li>
+                                <li><a href="#apolon">Apolon</a></li>
+                              </ul>
+                        </div> 
+                  </div>
+            </div>    
+        </div><!-- /.col-md-4 -->
+
+      </div><!-- /.row -->
+
+
+      <div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./static/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+
+
+    </body>
+</html>

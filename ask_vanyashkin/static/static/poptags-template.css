@@ -1,0 +1,35 @@
+
+.headlines-right-col{
+	margin-top: 15%;
+	font-size: xx-large;
+	text-align: left;
+}
+
+.Special-format1{
+	font-size: 20pt;
+	font-style: oblique;
+	font-weight: bolder;
+	color: #ff0000;
+	margin: 5px;
+}
+
+.Special-format2{
+	font-size: 18pt;
+	font-style: normal;
+	font-weight: lighter;
+	margin: 5px;
+}
+
+.Special-format3{
+	font-size: 15pt;
+	font-style: italic;
+	font-weight: bolder;
+	color: #7CFC00;
+	margin: 5px;
+}
+
+.tag-for-search{
+	text-align: left;
+	font-size: x-large; 
+	margin: 20px 0px;
+}

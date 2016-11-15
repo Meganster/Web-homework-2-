@@ -1,0 +1,48 @@
+.style-navbar{
+	margin-bottom: 3px;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+.placeholder {
+	padding: 0px, 50px;
+	margin: 12px;
+	width: 300px;
+	text-align: left;
+	border-radius: 10px;
+}
+
+.logo{
+	font-size: 20pt;
+	font-style: oblique;
+	font-weight: bolder;
+}
+
+.active-users{
+	list-style-type: none; 
+	text-align: left;
+	 margin: 10px -35px;
+}
+
+.tags-like-dislike{
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
+.like-dislike{
+	padding-right: 0px;
+}
+
+.tags{
+	margin-left: 20px;
+}
+
+.right-block{
+	margin-left: 10%;
+}
