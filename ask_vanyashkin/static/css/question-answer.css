@@ -19,24 +19,25 @@
 
 .col-question{
 	padding-left: 0px; 
-	margin-left: 0px; 
+	margin-left: 0px;
+	margin-right: 0px;
 	padding-right: 0px;
 }
 
 .question-answer{
-	border-color: #C4BEBE;
-	border-radius: 8px;
-	border-style: solid;
-	border-width: 2px;
-	margin: 3% 5% 2% 0%;
+	border-top-color: #DCDCDC; 
+	border-top-style: solid;
+	border-top-width: 1px;
+	margin-right: 7%;
 	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-bottom: 1px;
 	position: block;
 }
 
 .headlines-answer-question{
 	font-size: large;
 	font-weight: bold;
+	color: #07C;;
 }
 
 .question-answer-body{
@@ -51,9 +52,6 @@
 }
 
 .main-question{
-	border-color: #C4BEBE;
-	border-style: solid;
-	border-width: 0 0 1px 0;
 	margin: 5% 5% 2% 0%;
 	position: block;
 }
@@ -97,3 +95,11 @@
 .button-answer{
 	margin-top: 2%;
 }
+
+#textQuestion{
+     min-width: 100%;
+     max-width: 100%;
+     min-height: 200px;
+     max-height: 400px;
+}
+

@@ -8,18 +8,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Site like Stackoverflow">
     <meta name="author" content="yury" >
-    <link rel="icon" href="./static/favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
 
-    <title>One more question</title>
+    <title>Stack Questions</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./static/bootstrap.min.css" rel="stylesheet">
-    <link href="./static/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./static/starter-template.css" rel="stylesheet">
-    <link href="./static/poptags-template.css" rel="stylesheet">
-    <link href="./static/question-answer.css" rel="stylesheet">
+    <link href="/css/starter-template.css" rel="stylesheet">
+    <link href="/css/poptags-template.css" rel="stylesheet">
+    <link href="/css/question-answer.css" rel="stylesheet">
+    <link href="/css/pagination.css" rel="stylesheet">
   </head>
 
   <body>
@@ -31,23 +32,22 @@
 
         <!--Описание navbar-header-->
         <div class="navbar-header style-navbar">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          
-           <!--a><img src="./sign-question-icon.png" alt=" icons"  height="50" width="50" class="img-circle"></a-->
-          <a class="navbar-brand logo pull-left" href="./index.html" style="color: white">
-            One more question
-          </a>
+
+            <a class="navbar-brand logo pull-left" href="/index.html" style="font-style: normal">
+                <font id="first-word-title" >stack</font>
+
+                <font color="black">
+                    questions
+                </font>
+            </a>
         </div>
 
        
 
         <div id="navbar" class="collapse navbar-collapse">
-          <!--ul class="nav navbar-nav navbar-search">
-            <li><input class="placeholder" type="text" placeholder="Search"></li>
-          </ul-->
           <ul class="nav navbar-nav">
             <li>
               <form class="navbar-search pull-left">
@@ -56,12 +56,22 @@
             </li>
           </ul>
 
-          <ul class="nav navbar-nav pull-right">
-            <li><a href="./login.html">Log in</a></li>
-            <li><a href="./signup.html">Registration</a></li>
+          <ul class="nav navbar-nav pull-right login-register-header">
+            <li>
+                <div class="btn-group">
+                    <button class="btn btn-login-header">
+                        <a href="/login.html">Login</a>
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-register-header">
+                        <a href="/registration.html">Registration</a>
+                    </button>
+                </div>
+            </li>
           </ul>
+        </div><!--/.navbar-collapse -->
 
-        </div><!--/.nav-collapse -->
       </div>
     </div>
   </nav>
@@ -75,7 +85,7 @@
 
           <div class="row question-answer">
             <div class="col-xs-8 col-sm-2 col-picture">
-              <img src="./static/avatar2.jpg" alt="question1"  height="50" width="50" class="img-rounded">
+              <img src="/img/avatar2.jpg" alt="question1"  height="50" width="50" class="img-rounded">
             </div>
             <div class="col-xs-4 col-sm-10 col-question">
               <dl>
@@ -90,7 +100,7 @@
               <div class="row tags-like-dislike">
                     <div class="col-xs-8 col-sm-6">
                       <div class="main-answers-and-tags">
-                            <a href="./question.html">Answers 5</a>
+                            <a href="/question.html">Answers 5</a>
                             <span class="tags">Tags:</span>
                             <a href="#mvc">MVC</a> 
                             <a href="#overflow">Overflow</a>
@@ -99,9 +109,9 @@
 
                     <div class="col-xs-8 col-sm-6 like-dislike">
                       <div class="questions-list-btn-group btn-group">
-                        <button class="btn btn-link btn-sm"><img src="./static/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm"><img src="/img/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
                        <button class="btn btn-link btn-sm green-mark count-like" disabled="disabled">+1</button>
-                        <button class="btn btn-link btn-sm"><img src="./static/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm"><img src="/img/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
                       </div>
                     </div>
               </div><!--/.tags and like/dislike -->
@@ -110,12 +120,12 @@
 
           <div class="row question-answer">
             <div class="col-xs-8 col-sm-2 col-picture">
-              <img src="./static/avatar3.jpg" alt="question1"  height="50" width="50" class="img-rounded">
+              <img src="/img/avatar3.jpg" alt="question1"  height="50" width="50" class="img-rounded">
             </div>
             <div class="col-xs-4 col-sm-10 col-question">
               <dl>
                 <dt class="headlines-answer-question">
-                  <a href="#question1">Strange question2</a>
+                  <a href="#question2">Strange question2</a>
                 </dt>
                 <dd>
                   Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
@@ -125,7 +135,7 @@
               <div class="row tags-like-dislike">
                     <div class="col-xs-8 col-sm-6 like-dislike">
                       <div class="main-answers-and-tags">
-                            <a href="#question1">Answers 7</a>
+                            <a href="#question2">Answers 7</a>
                             <span class="tags">Tags:</span>
                             <a href="#mvc">MVC</a> 
                             <a href="#overflow">Overflow</a>
@@ -134,9 +144,9 @@
 
                     <div class="col-xs-8 col-sm-6 like-dislike">
                       <div class="questions-list-btn-group btn-group">
-                        <button class="btn btn-link btn-sm"><img src="./static/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm"><img src="/img/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
                         <button class="btn btn-link btn-sm green-mark count-like" disabled="disabled">+10</button>
-                        <button class="btn btn-link btn-sm"><img src="./static/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm"><img src="/img/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
                       </div>
                     </div>
               </div><!--/.tags and like/dislike -->
@@ -145,12 +155,12 @@
 
           <div class="row question-answer">
             <div class="col-xs-8 col-sm-2 col-picture">
-              <img src="./static/avatar4.jpg" alt="question1"  height="50" width="50" class="img-rounded">
+              <img src="/img/avatar4.jpg" alt="question1"  height="50" width="50" class="img-rounded">
             </div>
-            <div class="col-xs-4 col-sm-10 col-question">
+            <div class="col-xs-4 col-sm-10 col-question" style="margin: 0">
               <dl>
                 <dt class="headlines-answer-question">
-                  <a href="#question1">Strange question3</a>
+                  <a href="#question3">Strange question3</a>
                 </dt>
                 <dd>
                   Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
@@ -160,7 +170,7 @@
               <div class="row tags-like-dislike">
                     <div class="col-xs-8 col-sm-6 like-dislike">
                       <div class="main-answers-and-tags">
-                            <a href="#question1">Answers 15</a>
+                            <a href="#question3">Answers 15</a>
                             <span class="tags">Tags:</span>
                             <a href="#mvc">MVC</a> 
                             <a href="#overflow">Overflow</a>
@@ -169,15 +179,50 @@
 
                     <div class="col-xs-8 col-sm-6 like-dislike">
                       <div class="questions-list-btn-group btn-group">
-                        <button class="btn btn-link btn-sm"><img src="./static/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm"><img src="/img/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
                         <button class="btn btn-link btn-sm red-mark count-like" disabled="disabled">-5</button>
-                        <button class="btn btn-link btn-sm"><img src="./static/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm"><img src="/img/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
                       </div>
                     </div>
               </div><!--/.tags and like/dislike -->
             </div>
           </div> <!--/.question3 -->
 
+
+          <div class="row question-answer">
+            <div class="col-xs-8 col-sm-2 col-picture">
+              <img src="/img/avatar5.jpg" alt="question1"  height="50" width="50" class="img-rounded">
+            </div>
+            <div class="col-xs-4 col-sm-10 col-question" style="margin: 0">
+              <dl>
+                <dt class="headlines-answer-question">
+                  <a href="#question1">Strange question4</a>
+                </dt>
+                <dd>
+                  Почему он используется? Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. 
+                </dd>
+              </dl>
+
+              <div class="row tags-like-dislike">
+                    <div class="col-xs-8 col-sm-6 like-dislike">
+                      <div class="main-answers-and-tags">
+                            <a href="#question1">Answers 95</a>
+                            <span class="tags">Tags:</span>
+                            <a href="#mvc">MVC</a>
+                            <a href="#overflow">Valgrind</a>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-8 col-sm-6 like-dislike">
+                      <div class="questions-list-btn-group btn-group">
+                        <button class="btn btn-link btn-sm"><img src="/img/dislike.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                        <button class="btn btn-link btn-sm green-mark count-like" disabled="disabled">+77</button>
+                        <button class="btn btn-link btn-sm"><img src="/img/like.png" alt="Dislike icons" height="18" width="18" class="img-rounded"></button>
+                      </div>
+                    </div>
+              </div><!--/.tags and like/dislike -->
+            </div>
+          </div> <!--/.question4 -->
         </div><!-- col-md-8 -->
 
 
@@ -187,20 +232,28 @@
         <div class="col-md-4">
             <div class="right-block">
                   <div class="block">
-                        <p class="headlines-right-col">Popular Tags</p>
+                      <p class="headlines-right-col">
+                          <font>Popular tags</font>
+                      </p>
+
+                      <div id="widgettags">
                         <p>
-                          <a class="Special-format1">Python</a>
-                          <a class="Special-format2">Perl</a>
+                          <a class="t6" href="*options.url*url">PostgreSQL</a>
+                          <a class="t2" href="*options.url*url">Chrome</a>
+                          <a class="t9" href="*options.url*url">Java</a>
                         </p>
                         <p>
-                          <a class="Special-format1">Firefox</a>
-                          <a class="Special-format3" href="./fortag.html">MVC</a>
-                          <a class="Special-format2">Chrome</a>
+                          <a class="t1" href="*options.url*url">Opera</a>
+                          <a class="t3" href="*options.url*url">StackOverflow</a>
+                          <a class="t10" href="*options.url*url">C++</a>
                         </p>
                         <p>
-                          <a class="Special-format2">Postgre SQL</a>
-                          <a class="Special-format3">StackOverflow</a>
+                          <a class="t8" href="*options.url*url">Python</a>
+                          <a class="t7" href="*options.url*url">Perl</a>
+                          <a class="t4" href="*options.url*url">Firefox</a>
+                          <a class="t5" href="*options.url*url">MVC</a>
                         </p>
+                      </div>
                   </div> 
 
                   <div class="best-members">
@@ -220,7 +273,7 @@
             </div>    
         </div><!-- /.col-md-4 -->
 
-      </div>
+      </div><!-- /.row -->
 
 
       <div>
@@ -243,16 +296,13 @@
               </li>
             </ul>
           </nav>
-          </div>
+      </div>
     </div><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./static/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
-
-
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>

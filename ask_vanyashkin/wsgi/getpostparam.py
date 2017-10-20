@@ -15,7 +15,7 @@ html = """
 </html>
 """
 
-def application(environ, start_response):
+def app(environ, start_response):
     status = '200 OK'
 
     request_body_size = int(environ.get('CONTENT_LENGTH', 0))

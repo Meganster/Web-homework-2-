@@ -1,0 +1,9 @@
+wrk -d5s -t10 'http://127.0.0.1:8081/'
+Running 5s test @ http://askvanyashkin.io/
+  10 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     3.83ms   10.30ms 101.66ms   96.78%
+    Req/Sec   447.82     82.16   500.00     88.15%
+  16204 requests in 5.08s, 2.75MB read
+Requests/sec:   3191.09
+Transfer/sec:    554.55KB

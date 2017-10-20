@@ -30,5 +30,13 @@ def getpost(request):
     for key in request.POST:
         postPar += str(key) + " = " + str(request.POST[key]) + "<br>"
 
-    output = htmlPart + "<br>" + getPar + "<br>" + postPar
-    return HttpResponse(output)
+    outPut = htmlPart + "<br>" + getPar + "<br>" + postPar
+    return HttpResponse(outPut)
+
+
+def helloworld(request):
+    now = "Helloworld"
+    html = "<html><body> %s </body></html>" %now
+    return HttpResponse(html)
+
+

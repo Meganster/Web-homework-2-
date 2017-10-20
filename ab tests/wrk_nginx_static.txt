@@ -1,0 +1,9 @@
+wrk -d5s -t10 'http://askvanyashkin.io/helloworld.html'
+Running 5s test @ http://askvanyashkin.io/helloworld.html
+  10 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   375.36us   98.70us   4.82ms   94.58%
+    Req/Sec     2.67k    51.38     2.93k    89.59%
+  135231 requests in 5.10s, 117.48MB read
+Requests/sec:  26520.24
+Transfer/sec:     23.04MB

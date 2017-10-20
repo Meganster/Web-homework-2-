@@ -1,0 +1,9 @@
+wrk -d5s -t10 'http://127.0.0.1:8081/helloworld'
+Running 5s test @ http://127.0.0.1:8081/helloworld
+  10 threads and 10 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.15ms    7.01ms  80.82ms   94.14%
+    Req/Sec   349.11     67.38   434.00     81.49%
+  16383 requests in 5.07s, 3.55MB read
+Requests/sec:   3231.20
+Transfer/sec:    716.29KB
