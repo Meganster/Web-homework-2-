@@ -30,11 +30,9 @@ def application(environ, start_response):
 
     postLine = "POST data:<br>"
 
-    for key in d:
-        postLine += str(key) + ": "
-        for value in d[key]:
-            postLine += str(value) + " "
-        postLine += "<br>"
+    if intVal != "":
+        postLine += "intVal = " + str(intVal)
+    postLine += "<br>"
 
     d = parse_qsl(environ["QUERY_STRING"])
 
